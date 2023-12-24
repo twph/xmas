@@ -1,0 +1,77 @@
+#heading {
+    color:#CC231E;
+    text-align: center;
+    font-size: 100px;
+}
+
+.click{
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+
+}
+
+#button{
+    width:100px;
+    height:50px;
+    font-size: 20px;
+}
+
+@keyframes spin {
+    100% { transform: rotate(360deg); }
+}
+
+#marycontainer{
+    position: relative;
+    display: none;  
+    align-items: center;
+    justify-content: center;
+    animation: spin var(--spin-speed, 1.5s) linear infinite;
+    z-index: 9999;
+    
+}
+#marycontainer2{
+    position: relative;
+    display: none;  
+    align-items: right;
+    justify-content: right;
+    animation: spin var(--spin-speed, 1.75s) linear infinite;
+    z-index: 9999;
+    
+}
+#marycontainer3{
+    position: relative;
+    display: none;  
+    align-items: left;
+    justify-content: left;
+    animation: spin var(--spin-speed, 1.75s) linear infinite;
+    z-index: 9999;
+    
+}
+
+
+#treecontainer{
+    position: fixed;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  z-index: 0;
+
+}
+
+#tree{
+    position: fixed;
+    top: 400px;
+    margin: 0 auto;
+    z-index: 1;
+
+}
+
+#tree2{
+    position: fixed;
+    top: 400px;
+    right:0px;
+    margin: 0 auto;
+    z-index: 1;
+
+}
